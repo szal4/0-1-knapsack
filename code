@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+int max(int a,int b){
+    if(a>b){
+        return a;
+    }
+    else{
+        return b;
+    }
+}
+int maxvalue(int *val,int *weight,int w,int n){
+    int ans=0;
+    if(n==0||w==0){
+    return 0;
+    }
+    else if(weight[n-1]<=w){
+       return max(val[n-1]+maxvalue(val,weight,w-weight[n-1],n-1),maxvalue(val,weight,w,n-1));
+    }
+    else{
+        maxvalue(val,weight,w,n-1);
+    }
+    
+}
+int main(){
+    int val[3]={60,100,120};
+    int weight[3]={10,20,30};
+    int w=50;
+    int ans=maxvalue(val,weight,w,3);
+    printf("%d",ans);
+    return 0;
+}
