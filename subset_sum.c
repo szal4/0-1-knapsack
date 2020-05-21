@@ -4,14 +4,6 @@ question become same as subset_sum where s=sum/2*/
 #include<stdio.h>
 #include<stdbool.h>
 bool dp[10][25];//according to constrain
-int max(int a,int b){
-    if(a>b){
-        return a;
-    }
-    else{
-        return b;
-    }
-}
 bool subset_sum(int *arr,int n,int s){
     for(int k=0;k<n+1;k++){
         for(int l=0;l<s+1;l++){
