@@ -10,7 +10,7 @@ bool subset_sum(int *arr,int n,int s){
             if(k==0){
                 dp[k][l]=false;
             }
-            else if(l==0){//indicate when i=0andj=0 then dp[0][0]=true because n(i)=0 means null set and required sum(j)=0 can be achieved
+             if(l==0){//indicate when i=0andj=0 then dp[0][0]=true because n(i)=0 means null set and required sum(j)=0 can be achieved
                 dp[k][l]=true;//by null subset
             }
         }
