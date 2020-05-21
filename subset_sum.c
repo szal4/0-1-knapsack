@@ -1,4 +1,6 @@
 //to find whether any subset of arr can make the given sum by summing its elements
+/*for equal sum partition(i.e. dvide arr completly into two subset such that sum of both is equal) of array check if sum of arr is divisible by 2 if not then ans will be false if yes then divide sum by 2 and 
+question become same as subset_sum*/
 #include<stdio.h>
 #include<stdbool.h>
 bool dp[10][25];//according to constrain
