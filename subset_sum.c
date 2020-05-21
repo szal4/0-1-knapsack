@@ -18,8 +18,8 @@ bool subset_sum(int *arr,int n,int s){
             if(i==0){
                 dp[i][j]=false;
             }
-            else if(j==0){
-                dp[i][j]=true;
+            else if(j==0){//indicate when i=0andj=0 then dp[0][0]=true because n(i)=0 means null set and required sum(j)=0 can be achieved
+                dp[i][j]=true;//by null subset
             }
         else if(arr[i-1]<=j){
             dp[i][j]=dp[i-1][j-arr[i-1]]||dp[i-1][j];
