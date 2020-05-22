@@ -33,8 +33,8 @@ int main(){
         sum+=arr[i];
     }
     int min=sum;
-    for(int j=0;j<=sum/2;j++){
-        b=subset(arr,4,j);
+    for(int j=0;j<=sum/2;j++){//instread of checking for different sum we can return last row when sum is passed into subset function 
+        b=subset(arr,4,j);//because last row indicate for all elemet and for different value of j(sum)
         if(b){
            check=abs(sum-2*j);
         if(check<min){
