@@ -1,3 +1,4 @@
+//maximum values(each value have some weight) a bag can store with a givin capacity(weight) of bag
 #include<stdio.h>
 #include<conio.h>
 int dp[10][10];//according to constrain
