@@ -29,7 +29,7 @@ int knapsack(int *val,int *wt,int w,int n){
 int main(){
     int val[3]={60,100,120};
     int wt[3]={1,2,3};
-    int w=5;
+    int w=5;//capacity of bag or knapsack
     int ans=knapsack(val,wt,w,3);
     printf("%d",ans);
     return 0;
